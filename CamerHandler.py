@@ -9,10 +9,10 @@ class CameraControl:
         self.setCamera(0)
 
 
-    def printCameras(self):
+    def printAllCameras(self):
         print("Please choose you're Camera")
         for camera_info in enumerate_cameras():
-            print(f"{camera_info.index - 700} : {camera_info.name}")
+            print(f"{camera_info.index} : {camera_info.name}")
 
     def setCamera(self, id):
         self.camera = cv2.VideoCapture(id)
